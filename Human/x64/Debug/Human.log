@@ -1,0 +1,16 @@
+﻿  directionalLight.cpp
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(112,14): error C3861: 'PositionFinder': identifier not found
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(114,14): error C3861: 'PositionFinder': identifier not found
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(123,15): error C3861: 'PositionFinder': identifier not found
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(125,15): error C3861: 'PositionFinder': identifier not found
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(214,34): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(214,29): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(214,24): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(254,44): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(254,37): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(257,43): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(257,36): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(260,42): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(263,41): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(266,38): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+E:\drive c\ComputerGraphicsDirectX12Codes\Homework5\Human\directionalLight.cpp(269,37): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
