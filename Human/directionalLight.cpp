@@ -1,17 +1,3 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////
-// 
-// File: directionalLight.cpp
-// 
-// Author: Frank Luna (C) All Rights Reserved
-//
-// System: AMD Athlon 1800+ XP, 512 DDR, Geforce 3, Windows XP, MSVC++ 7.0 
-//
-// Desc: Demonstrates using a directional light with D3DX objects.  You can orbit
-//       the scene using the left and right arrow keys.  In addition you can 
-//       elevate the camera with the up and down arrow keys.
-//          
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
 #include "d3dUtility.h"
 
 using namespace std;
@@ -56,13 +42,6 @@ void translate(D3DXMATRIX* base, float x, float y, float z) {
 
 //function for walking on the x axis
 void walkX(string direction) {
-	/* prevent from overflowing the plane
-	if ((direction == "w" && forward_backward_move > plane_z - 1) ||
-		(direction == "s" && forward_backward_move < -plane_z + 1)) {
-		resetBodyWall();
-		return;
-	}*/
-
 	if (direction == "a") right_left_move += speed;
 	if (direction == "d") right_left_move -= speed;
 
@@ -77,13 +56,6 @@ void walkX(string direction) {
 
 //function for walking on the y axis
 void walkY(string direction) {
-	/* prevent from overflowing the plane
-	if ((direction == "w" && forward_backward_move > plane_z - 1) ||
-		(direction == "s" && forward_backward_move < -plane_z + 1)) {
-		resetBodyWall();
-		return;
-	}*/
-
 	if (direction == "q") up_down_move += speed;
 	if (direction == "e") up_down_move -= speed;
 
@@ -98,13 +70,6 @@ void walkY(string direction) {
 
 //function for walking on the z axis
 void walkZ(float degree, string direction) {
-	/* prevent from overflowing the plane
-	if ((direction == "w" && forward_backward_move > plane_z - 1) ||
-		(direction == "s" && forward_backward_move < -plane_z + 1)) {
-		resetBodyWall();
-		return;
-	}*/
-
 	if (direction == "w") forward_backward_move += speed;
 	if (direction == "s") forward_backward_move -= speed;
 
@@ -363,42 +328,7 @@ bool Display(float timeDelta)
 
 		//move forward
 		if (::GetAsyncKeyState(0x57) & 0x8000f) { // w
-				//if (last_move == "s") {
-				//	while (rotation_degree >= 0) {
-				//		forward_backward_move -= speed / 2.0f;
-				//		walkZ(-forward_backward_move, "w");
-
-				//		/*if (rotation_degree > 0)
-				//			break;*/
-				//	}
-				//	while(rotation_degree < 0) {
-				//		forward_backward_move += speed / 2.0f;
-				//		walkZ(-forward_backward_move, "w");
-
-				//		/*if (rotation_degree < 0)
-				//			break;*/
-				//	}
-				//	last_move = "w";
-				//}
-				//else {
-				//	last_move = "w";
-
-				//	if (hands_move_forward)
-				//		rotation_degree += speed;
-
-				//	else
-				//		rotation_degree -= speed;
-
-				//	walkZ(rotation_degree, "w");
-
-				//	if (rotation_degree >= 3.14f / 4)
-				//		hands_move_forward = false;
-
-				//	else if (rotation_degree <= -3.14f / 4)
-				//		hands_move_forward = true;
-				//}
-
-			if (last_move == "s") {
+				if (last_move == "s") {
 				if (rotation_degree > 0) {
 					for (int x = 0; x < 1000000; x++) {
 						if (x % 100 == 0) {
@@ -449,41 +379,6 @@ bool Display(float timeDelta)
 
 		//move backward
 		if (::GetAsyncKeyState(0x53) & 0x8000f) { // s
-			//if (last_move == "w") {
-			//	while (rotation_degree >= 0) {
-			//		forward_backward_move -= speed / 2.0f;
-			//		walkZ(forward_backward_move, "s");
-
-			//		/*if (rotation_degree > 0)
-			//			break;*/
-			//	}
-			//	while (rotation_degree < 0) {
-			//		forward_backward_move += speed / 2.0f;
-			//		walkZ(forward_backward_move, "s");
-
-			//		/*if (rotation_degree < 0)
-			//			break;*/
-			//	}
-			//	last_move = "s";
-			//}
-			//else {
-			//	last_move = "s";
-
-			//	if (hands_move_forward)
-			//		rotation_degree += speed;
-
-			//	else
-			//		rotation_degree -= speed;
-
-			//	walkZ(-rotation_degree, "s");
-
-			//	if (rotation_degree >= 3.14f / 4)
-			//		hands_move_forward = false;
-
-			//	else if (rotation_degree <= -3.14f / 4)
-			//		hands_move_forward = true;
-			//}
-
 			if (last_move == "w") {
 				if (rotation_degree > 0) {
 					for (int x = 0; x < 1000000; x++) {
